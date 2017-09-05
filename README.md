@@ -4,9 +4,9 @@
 ## feature:
 + [x] spa 
 + [x] webpack 3.x
-+ [ ] bootstrap-sass3.3.7
++ [x] bootstrap-sass3.3.7
 + [ ] next-redux-base
-+ [x] image comporess
++ [x] image compress
 + [x] fonts/images to folder
 + [ ] react-router v4
 
