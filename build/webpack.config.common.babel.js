@@ -81,6 +81,9 @@ export default {
     }),
     new webpack.LoaderOptionsPlugin({
       options: {
+        babel: {
+          babelrc: true,
+        },
         postcss: {
           plugins: [
             autoprefixer({

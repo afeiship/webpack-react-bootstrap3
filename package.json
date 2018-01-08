@@ -10,7 +10,7 @@
     "predev": "npm run clean && npm run dll-dev",
     "prebuild": "npm run clean && npm run dll-prd",
     "build": "webpack -p --env=prd",
-    "dev": "webpack-dev-server -p --env=dev",
+    "dev": "webpack-dev-server --env=dev",
     "start": "npm run build && node express.js"
   },
   "repository": {
@@ -39,7 +39,7 @@
     "react-dom": "^15.6.1",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "webkit-scss-reset": "github:afeiship/webkit-sass-reset"
+    "webkit-sass-reset": "github:afeiship/webkit-sass-reset"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.3",
@@ -82,7 +82,7 @@
     "svg-inline-loader": "^0.8.0",
     "url-loader": "^0.5.9",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1",
+    "webpack-dev-server": "^2.10.0",
     "webpack-merge": "^4.1.0"
   }
 }
