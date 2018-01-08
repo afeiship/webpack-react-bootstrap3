@@ -1,6 +1,6 @@
 import AppBase from 'components/scripts/index';
 import {renderRoutes} from 'react-router-config';
-import {BrowserRouter} from 'react-router-dom';
+import {BrowserRouter,HashRouter} from 'react-router-dom';
 import routes from './routes';
 
 
@@ -39,7 +39,7 @@ export default class extends AppBase {
     const {test} = AppBase.$.local;
     const childRoutes = renderRoutes(routes);
     return (
-      <BrowserRouter ref="root" children={childRoutes}/>
+      <HashRouter ref="root" children={childRoutes}/>
     );
   }
 }
