@@ -9,6 +9,7 @@
 + [x] image compress
 + [x] fonts/images to folder
 + [ ] react-router v4
++ [ ] CopyWebpackPlugin -> webpack favico.ico
 
 ## resources:
 + https://github.com/shakacode/bootstrap-loader

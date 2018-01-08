@@ -1,31 +1,44 @@
-import 'styles/index';
-import reactLogo from 'images/react_logo.svg';
-import snipImg from 'images/Snip20170830_1.png';
+import AppBase from 'components/scripts/index';
 
-export default class extends React.Component {
+
+export default class extends AppBase {
+  static initialState() {
+    return {
+      memory: {
+        initialData: {
+          tes: 123,
+          age: 100,
+          items: []
+        },
+        myInitial: 0,
+        sum: 0
+      },
+      local: {
+        test: 200,
+        store: 0,
+        items: [
+          {key: 1}
+        ]
+      },
+      session: {
+        afei: 'session test..'
+      }
+    }
+  }
 
   _onClick = e => {
-    console.log('img!');
-  };
-
-  _onClick2 = e => {
-    console.log('from bootstrap 3.3.7!');
-  };
-
-  _onClick3 = e => {
-    console.log('We are customized by afei');
+    let {test} = AppBase.$.local;
+    test++;
+    AppBase.$.local = {test: test};
   };
 
   render() {
-    return <div className="app">
-      <h1>Hello World Fei!</h1>
-      <p>Foo to the bar</p>
-      <button type="button" className="btn btn-primary" onClick={this._onClick2}>Success!!!</button>
-      <button type="button" className="btn btn-success" onClick={this._onClick3}>Success!!!</button>
-      <img src={reactLogo} onClick={this._onClick}/>
-      <p className="tc">
-        <img src={snipImg} alt=""/>
-      </p>
-    </div>;
+    const {test} = AppBase.$.local;
+    return (
+      <div className="app-view">
+        member-list.1212...{test}
+        <button className="btn btn-primary" onClick={this._onClick}>Primary Button</button>
+      </div>
+    );
   }
-};
+}

@@ -4,7 +4,7 @@ import {resolve, join} from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import autoprefixer from 'autoprefixer';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-
+import AddAssetHtmlPlugin from 'add-asset-html-webpack-plugin';
 export default {
   entry: './index.js',
   output: {
@@ -68,22 +68,24 @@ export default {
       mixin: 'mixin-decorator',
     }),
     new webpack.DllReferencePlugin({
+      context: __dirname,
       manifest: resolve(__dirname, '../dist/vendors/manifest.json')
     }),
     new HtmlWebpackPlugin({
-      template: resolve(__dirname, '../public/index.html'),
+      template: resolve(__dirname, '../src/index.ejs'),
       title: 'Hot Module Replacement'
+    }),
+    new AddAssetHtmlPlugin({
+      includeSourcemap: false,
+      filepath: resolve(__dirname, '../dist/vendors/vendors.*.js')
     }),
     // build optimization plugins
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
-      filename: 'vendor-[hash].min.js',
+      name: 'common',
+      filename: 'common-[hash].min.js',
     }),
     new webpack.LoaderOptionsPlugin({
       options: {
-        babel: {
-          babelrc: true,
-        },
         postcss: {
           plugins: [
             autoprefixer({

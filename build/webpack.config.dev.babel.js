@@ -20,7 +20,6 @@ export default merge(commonConfig, {
     historyApiFallback: true,
     headers: {
       "Access-Control-Allow-Origin": "*",
-      "Power-by": "Fei-WEBPACK"
     }
   }
 });

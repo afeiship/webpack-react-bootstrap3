@@ -1,7 +1,6 @@
-import 'bootstrap-loader';
-import App from "./app";
+import 'components/styles/index.scss';
+import './style';
+import {ReduxBoot} from 'next-react-redux';
+import App from './app';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById("root")
-);
+ReduxBoot.run(App, 'root');
