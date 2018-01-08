@@ -1,6 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
-
+import {vendors} from '../config.json';
 export default {
   output: {
     path: path.resolve(__dirname, '../dist/vendors'),
@@ -15,13 +15,6 @@ export default {
     })
   ],
   entry: {
-    vendors: [
-      'next-js-core2',
-      'next-react-redux',
-      'mixin-decorator',
-      'classnames',
-      'react-router',
-      'react-router-dom',
-    ]
+    vendors
   },
 }

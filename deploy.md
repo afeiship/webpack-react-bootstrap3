@@ -28,3 +28,13 @@ npm run build
 4. 测试：http://localhost:8081
 
 ```
+
+
+
+## dev with docker:
+```
+1. 我在本地开发： npm run dev 跑的端口为： http://localhost:8337
+2. 我期望的情况（利用 dockerfile 实现）：
+ 2.1 本地配置 www.dev.com:8337
+ 2.2 实际访问的是 docker 里的 centos 的 8337 和 webpack 的开发服务
+```
