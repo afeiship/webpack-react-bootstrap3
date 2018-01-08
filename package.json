@@ -10,7 +10,8 @@
     "predev": "npm run clean && npm run dll-dev",
     "prebuild": "npm run clean && npm run dll-prd",
     "build": "webpack -p --env=prd",
-    "dev": "webpack-dev-server --env=dev"
+    "dev": "webpack-dev-server --env=dev",
+    "start": "npm run build && node express.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "mixin-decorator": "github:afeiship/mixin-decorator",
     "next-date": "github:afeiship/next-date",
     "next-js-core2": "github:afeiship/next-js-core2",
+    "next-react-redux": "github:afeiship/next-react-redux",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router": "^4.2.0",

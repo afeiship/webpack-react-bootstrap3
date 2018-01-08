@@ -39,7 +39,7 @@ export default class extends AppBase {
     const {test} = AppBase.$.local;
     const childRoutes = renderRoutes(routes);
     return (
-      <HashRouter ref="root" children={childRoutes}/>
+      <HashRouter children={childRoutes}/>
     );
   }
 }

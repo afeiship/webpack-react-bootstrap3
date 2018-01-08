@@ -17,6 +17,7 @@ export default {
   entry: {
     vendors: [
       'next-js-core2',
+      'next-react-redux',
       'mixin-decorator',
       'classnames',
       'react-router',
