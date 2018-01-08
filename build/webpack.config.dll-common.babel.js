@@ -17,7 +17,10 @@ export default {
   entry: {
     vendors: [
       'next-js-core2',
-      'mixin-decorator'
+      'mixin-decorator',
+      'classnames',
+      'react-router',
+      'react-router-dom',
     ]
   },
 }

@@ -31,7 +31,6 @@
   },
   "homepage": "https://github.com/afeiship/webpack-react-bootstrap3#readme",
   "dependencies": {
-    "add-asset-html-webpack-plugin": "^2.1.2",
     "classnames": "^2.2.5",
     "mixin-decorator": "github:afeiship/mixin-decorator",
     "next-date": "github:afeiship/next-date",
@@ -44,6 +43,7 @@
     "webkit-sass-reset": "github:afeiship/webkit-sass-reset"
   },
   "devDependencies": {
+    "add-asset-html-webpack-plugin": "^2.1.2",
     "autoprefixer": "^7.1.3",
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
