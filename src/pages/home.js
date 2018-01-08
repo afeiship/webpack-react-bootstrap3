@@ -1,5 +1,9 @@
 import AppBase from 'components/scripts/index';
 import React, {Component} from 'react';
+import reactLogo from 'images/react_logo.svg';
+import snipImg from 'images/Snip20170830_1.png';
+
+
 
 export default class Home extends Component {
 
@@ -23,7 +27,9 @@ export default class Home extends Component {
     return (
       <div className="home-view">
         <h1>Home Page {test} - {name}</h1>
-        <button onClick={this._onClick}>Test button</button>
+        <button className="btn btn-primary" onClick={this._onClick}>Test button</button>
+        <img src={reactLogo} alt=""/>
+        <img src={snipImg} alt=""/>
       </div>
     );
   }

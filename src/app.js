@@ -3,6 +3,7 @@ import {renderRoutes} from 'react-router-config';
 import {BrowserRouter} from 'react-router-dom';
 import routes from './routes';
 
+
 export default class extends AppBase {
   static initialState() {
     return {
