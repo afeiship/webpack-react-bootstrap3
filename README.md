@@ -10,6 +10,8 @@
 + [x] fonts/images to folder
 + [x] react-router v4 + router with config
 + [x] HtmlWebpack -> webpack favico.ico
++ [ ] docker-[ dev/build/release ]
++ [ ] nginx
 
 ## resources:
 + https://github.com/shakacode/bootstrap-loader
