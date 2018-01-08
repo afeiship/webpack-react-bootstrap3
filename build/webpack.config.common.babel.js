@@ -73,6 +73,7 @@ export default {
     }),
     new HtmlWebpackPlugin({
       template: resolve(__dirname, '../src/index.ejs'),
+      favicon: resolve(__dirname, '../src/assets/images/favicon.ico'),
       title: 'Hot Module Replacement'
     }),
     new AddAssetHtmlPlugin({

@@ -1,5 +1,7 @@
 import AppBase from 'components/scripts/index';
-
+import {renderRoutes} from 'react-router-config';
+import {BrowserRouter} from 'react-router-dom';
+import routes from './routes';
 
 export default class extends AppBase {
   static initialState() {
@@ -34,11 +36,9 @@ export default class extends AppBase {
 
   render() {
     const {test} = AppBase.$.local;
+    const childRoutes = renderRoutes(routes);
     return (
-      <div className="app-view">
-        member-list.1212...{test}
-        <button className="btn btn-primary" onClick={this._onClick}>Primary Button</button>
-      </div>
+      <BrowserRouter ref="root" children={childRoutes}/>
     );
   }
 }

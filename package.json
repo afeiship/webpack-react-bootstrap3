@@ -39,6 +39,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router": "^4.2.0",
+    "react-router-config": "^1.0.0-beta.4",
     "react-router-dom": "^4.2.2",
     "webkit-sass-reset": "github:afeiship/webkit-sass-reset"
   },
